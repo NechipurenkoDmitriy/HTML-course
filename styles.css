@@ -16,14 +16,21 @@ a {
 
 a:hover {
   text-decoration: underline;
+  color: orange;
+  transition: all 300ms;
 }
 
 a:active {
-  color: orange;
+  color: red;
 }
 
 a:visited {
   color: gray;
+}
+
+a:visited:hover {
+  color: orange;
+  transition: all 300ms;
 }
 
 .container {
@@ -36,17 +43,35 @@ a:visited {
   margin-bottom: 20px;
   display: flex;
 }
-.avatar {
+
+.info-avatar {
   width: 200px;
   border-radius: 25px;
+}
+
+.shadow {
   box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
 }
 
-@media (max-width: 750px) {
-  .info {
-    display: block;
-    text-align: center;
-  }
+.card-box {
+  display: flex;
+}
+
+.card-box .card:first-child {
+  margin-left: 0;
+}
+
+.card {
+  border-radius: 20px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+.card h2 {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .info-text {
@@ -64,27 +89,111 @@ a:visited {
   margin-bottom: 10px;
 }
 
-.card {
-  border-radius: 20px;
-  padding: 15px 20px;
-  margin-bottom: 20px;
+.lists .card:first-child {
+  width: 35%;
 }
 
-.card h2 {
+.lists .card:last-child {
+  width: 65%;
+}
+
+.plus-minus .card {
+  width: 50%;
+}
+
+.plus-minus li {
+  color: #394150;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.plus-minus .ico {
+  width: 20px;
+  margin-right: 15px;
+  margin-bottom: -4px;
+}
+
+@media (max-width: 750px) {
+  .card-box {
+    display: block;
+    width: 100%;
+  }
+
+  .card {
+    margin-left: 0;
+  }
+
+  .info {
+    display: block;
+    text-align: center;
+  }
+
+  .lists .card:first-child {
+    width: 100%;
+  }
+
+  .lists .card:last-child {
+    width: 100%;
+  }
+
+  .plus-minus .card {
+    width: 100%;
+  }
+
+  .card-box .stats {
+    width: 100%;
+  }
+}
+
+.pf-box {
+  border-radius: 20px;
+  display: block;
+  width: 100%;
+}
+
+.pf-box h2 {
+  text-align: center;
   margin-top: 5px;
   margin-bottom: 10px;
 }
 
-.bg-yellow {
-  background: #fff9dc;
+.pf-box .pf-info {
+  margin-top: 20px;
 }
 
-.bg-red {
-  background: #ffe5e5;
+.pf-avatar {
+  width: 250px;
+  height: auto;
+  border-radius: 15px;
+  margin: 10px 20px;
 }
 
-.bg-green {
-  background: #e5ffe7;
+.pf-avatar:hover {
+  transform: scale(1.5) translateX(20px);
+  transition: all 2000ms ease-in-out;
+}
+
+.card-box .stats {
+  width: 50%;
+}
+
+.pf-box .stats {
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  .pf-info {
+    text-align: left;
+  }
+  .pf-info .table {
+    width: 300px;
+  }
+  .pf-box h2 {
+    text-align: left;
+    margin-left: 40px;
+  }
 }
 
 .form {
@@ -107,6 +216,26 @@ a:visited {
 .btn:hover {
   opacity: 0.8;
   color: orange;
+  box-shadow: none;
+  border: 2px solid orange;
+}
+
+.message-btn {
+  position: sticky;
+  bottom: 0;
+  transform: translateX(0px);
+  transition: all 1000ms;
+}
+
+.message-btn:hover {
+  transform: translateX(550px);
+  transition: all 4000ms;
+}
+
+@media (max-width: 750px) {
+  .message-btn:hover {
+    transition: none;
+  }
 }
 
 .list {
@@ -142,10 +271,8 @@ a:visited {
 }
 
 .form-row .form-group {
-  /* display: inline-block; */
   margin-right: 20px;
   width: 50%;
-  /* width: calc(50% - 20px); */
 }
 
 .form-row .form-group:last-child {
@@ -153,6 +280,10 @@ a:visited {
 }
 
 @media (max-width: 750px) {
+  .form {
+    text-align: center;
+  }
+
   .form-row {
     display: block;
   }
@@ -181,4 +312,25 @@ a:visited {
   padding: 15px 0 10px;
   outline: none;
   font-family: inherit;
+}
+
+/* bg-collors */
+.bg-yellow {
+  background: #fff9dc;
+}
+
+.bg-red {
+  background: #ffe5e5;
+}
+
+.bg-green {
+  background: #e5ffe7;
+}
+
+.bg-pink {
+  background: #f8c3e2;
+}
+
+.bg-lblue {
+  background: #a7d4ff;
 }

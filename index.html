@@ -13,7 +13,11 @@
   <body>
     <div class="container">
       <div class="info">
-        <img src="images/avatar.jpeg" class="avatar" alt="фотокарточка" />
+        <img
+          src="images/avatar.jpeg"
+          class="info-avatar shadow"
+          alt="фотокарточка"
+        />
 
         <div class="info-text">
           <h1>Дмитрий Нечипуренко</h1>
@@ -35,52 +39,229 @@
           <a href="https://www.instagram.com/mitiatina/" target="_blank"
             >Instagram</a
           >
+          |
+          <a href="#" target="_blank">Заглушка 1</a>
+          |
+          <a href="#" target="_blank">Заглушка 2</a>
         </div>
       </div>
 
-      <div class="card bg-green">
-        <h2>Мои хобби:</h2>
-        <ol class="list">
-          <li>Велосипед</li>
-          <li>Ведьмак 3</li>
-          <li>
-            НРИ
-            <ul>
-              <li>Pathfinder 1e</li>
-              <li>Pathfinder 2e</li>
-              <li>Starfinder</li>
-            </ul>
-          </li>
-          <li>Покупать гитарные педали</li>
-        </ol>
+      <div class="card-box lists">
+        <div class="card bg-pink shadow">
+          <h2>Мои хобби:</h2>
+          <ol class="list">
+            <li>Велосипед</li>
+            <li>Ведьмак 3</li>
+            <li>
+              НРИ
+              <ul>
+                <li>Pathfinder 1e</li>
+                <li>Pathfinder 2e</li>
+                <li>Starfinder</li>
+              </ul>
+            </li>
+            <li>Покупать гитарные педали</li>
+          </ol>
+        </div>
+
+        <div class="card bg-lblue shadow">
+          <h2>Опыт работы:</h2>
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>Макдоналдс</td>
+                <td>Инструктор по обучению</td>
+                <td>2009-2012</td>
+              </tr>
+              <tr>
+                <td>Гараж</td>
+                <td>Слесарь</td>
+                <td>2013-2015</td>
+              </tr>
+              <tr>
+                <td>Эхо-Импульс</td>
+                <td>Ведущий инженер</td>
+                <td>2015-сейчас</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
 
-      <div class="card bg-yellow">
-        <h2>Опыт работы</h2>
-        <table class="table">
-          <!-- <thead>
-            <th>Название</th>
-            <th>Должность</th>
-            <th>Год</th>
-          </thead> -->
-          <tbody>
-            <tr>
-              <td>Макдоналдс</td>
-              <td>Инструктор по обучению</td>
-              <td>2009-2012</td>
-            </tr>
-            <tr>
-              <td>Гараж</td>
-              <td>Слесарь</td>
-              <td>2013-2015</td>
-            </tr>
-            <tr>
-              <td>Эхо-Импульс</td>
-              <td>Ведущий инженер</td>
-              <td>2015-сейчас</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="card-box plus-minus">
+        <div class="card shadow bg-green">
+          <h2>Мои плюсы</h2>
+          <ul>
+            <li>
+              <img src="images/plus.png" class="ico" alt="+" />
+              Общительность
+            </li>
+            <li>
+              <img src="images/plus.png" class="ico" alt="+" />
+              Стрессоустойчивость
+            </li>
+            <li>
+              <img src="images/plus.png" class="ico" alt="+" />
+              Умение работать в команде
+            </li>
+            <li>
+              <img src="images/plus.png" class="ico" alt="+" /> Играю на гитаре
+            </li>
+            <li><img src="images/plus.png" class="ico" alt="+" /> Не курю</li>
+          </ul>
+        </div>
+        <div class="card shadow bg-red">
+          <h2>Мои минусы</h2>
+          <ul>
+            <li>
+              <img src="images/minus.png" class="ico" alt="-" />
+              Необщительность
+            </li>
+            <li>
+              <img src="images/minus.png" class="ico" alt="-" />
+              Стрессонеусточивость
+            </li>
+            <li>
+              <img src="images/minus.png" class="ico" alt="-" />
+              Работаю один
+            </li>
+            <li>
+              <img src="images/minus.png" class="ico" alt="-" /> Играю на гитаре
+            </li>
+            <li><img src="images/minus.png" class="ico" alt="-" /> Не курю</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card-box">
+        <div class="pf-box card shadow bg-yellow">
+          <h2>Лист персонажа в Pathfinder 2e</h2>
+
+          <div class="card-box">
+            <img
+              src="images/gnome.jpg"
+              class="pf-avatar shadow"
+              alt="аватар героя"
+            />
+
+            <div class="pf-info pf-card card">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>Уровень</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>Имя</td>
+                    <td>MC Big Bang</td>
+                  </tr>
+                  <tr>
+                    <td>Народ</td>
+                    <td>Гном (Феерожденный)</td>
+                  </tr>
+                  <tr>
+                    <td>Класс</td>
+                    <td>Бард</td>
+                  </tr>
+                  <tr>
+                    <td>Размер</td>
+                    <td>Маленький</td>
+                  </tr>
+                  <tr>
+                    <td>Скорость</td>
+                    <td>25 футов</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <h2>Характеристики</h2>
+
+          <div class="card-box">
+            <div class="stats card">
+              <table class="table">
+                <thead>
+                  <th>Название</th>
+                  <th>Значение</th>
+                  <th>Модификатор</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Сила</td>
+                    <td>8</td>
+                    <td>-1</td>
+                  </tr>
+                  <tr>
+                    <td>Ловкость</td>
+                    <td>16</td>
+                    <td>+3</td>
+                  </tr>
+                  <tr>
+                    <td>Выносливость</td>
+                    <td>14</td>
+                    <td>+2</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="stats card">
+              <table class="table">
+                <thead>
+                  <th>Название</th>
+                  <th>Значение</th>
+                  <th>Модификатор</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Интеллект</td>
+                    <td>12</td>
+                    <td>+1</td>
+                  </tr>
+                  <tr>
+                    <td>Мудрость</td>
+                    <td>10</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>Харизма</td>
+                    <td>18</td>
+                    <td>+4</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="feats card">
+            <h2>Таланты:</h2>
+            <ol class="list">
+              <li>
+                <a
+                  href="https://2e.aonprd.com/Feats.aspx?ID=766"
+                  target="_blank"
+                  >Charming Liar</a
+                >
+              </li>
+              <li>
+                <a href="https://2e.aonprd.com/Feats.aspx?ID=25" target="_blank"
+                  >Animal Accomplice</a
+                >
+                <ul>
+                  <li>Попугай Оксиморон</li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="https://2e.aonprd.com/Spells.aspx?ID=389"
+                  target="_blank"
+                  >Lingering Composition</a
+                >
+              </li>
+            </ol>
+          </div>
+        </div>
       </div>
 
       <form action="/" class="form">
@@ -108,7 +289,9 @@
           ></textarea>
         </div>
 
-        <button type="submit" class="btn">Отправить запрос</button>
+        <button type="submit" class="btn shadow message-btn">
+          Отправить запрос
+        </button>
       </form>
     </div>
   </body>
