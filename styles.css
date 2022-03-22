@@ -194,6 +194,36 @@ a:visited:hover {
     text-align: left;
     margin-left: 40px;
   }
+  .stats-hide {
+    display: none;
+  }
+
+  /*  */
+
+  .stats .table td:nth-child(1) {
+    width: 110px;
+  }
+
+  .stats .table td:nth-child(2),
+  .stats .table td:nth-child(3) {
+    width: 100px;
+  }
+  .stats thead {
+    font-size: 12px;
+  }
+
+  .stats table {
+    width: 330px;
+  }
+
+  .stats:first-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .stats:last-child {
+    margin-top: 0;
+    padding-top: 0;
+  }
 }
 
 .form {
